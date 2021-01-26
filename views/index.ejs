@@ -1,0 +1,69 @@
+<%- include('top.ejs') %>
+<table class="table table-striped table-bordered table-hover">
+  <thead class="thead-dark">
+      <tr>
+        <th scope="col">Foto</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Sobrenome</th>
+        <th scope="col">Telefone</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Endereço</th>
+        <th scope="col">Excluir</th>
+        <th scope="col">Editar</th>
+      </tr>
+  </thead>
+  <tbody>
+<% docs.forEach(function(customer){ %>
+  <tr>
+  <td>
+      <img src="<%= customer.imagem %>"  width="50px"/>
+  </td>
+  <td>
+      <%= customer.nome %>
+  </td>
+  <td>  
+      <%= customer.sobrenome%>
+  </td>
+  <td>
+      <%= customer.telefone %>
+    </a>
+  </td>
+  <td>
+      <%= customer.email %>
+  </td>
+  <td>
+      <%= customer.endereco %>
+  </td>
+  <td>
+    <a href="/delete/<%= customer._id %>" class="btn btn-danger" 
+      onclick="return confirm('Tem certeza que deseja excluir?');">
+      X
+    </a>
+  </td>
+  <td>
+    <a href="/edit/<%= customer._id %>">
+      Editar
+    </a>
+  </td>
+  </tr>
+<% }) %>
+</tbody>
+</table>
+<hr />
+<p>
+  <%= count %> clientes encontrados!
+</p>
+<p>
+  <nav aria-label="Paginação">
+    <ul class="pagination">
+      <%
+        for(var i=1; i <= qtdPaginas; i++) {
+          %>
+            <li class="page-item"><a class="page-link" href="/<%= i %>"><%= i %></a></li>
+      <% }%>
+    </ul>
+  </nav>
+</p>
+<hr />
+<a href="/new" class="btn btn-primary">Cadastrar novo cliente</a>
+<%- include('bottom.ejs') %>
