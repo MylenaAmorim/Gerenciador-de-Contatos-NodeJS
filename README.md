@@ -30,31 +30,19 @@ git clone https://github.com/MylenaAmorim/Gerenciador-de-Contatos.git SoftMakers
  - Baixar e instalar o Node.js (https://nodejs.org/en/download/current/);
  - Entrar na pasta SoftMakers-Contatos;
  - No terminal de linha de comando e, dentro da pasta do projeto, digitar:
- ```
- npm start
- ```
+ ```npm start```
  - Baixar o MongoDB Community Server (https://www.mongodb.com/try/download/community);
  - Criar pasta data dentro da pasta onde foi salvo o repositório:
- ```
- mkdir data
- ```
+ ```mkdir data```
  - Executar o Mongo:
    - Entrar na pasta bin do MongoDB  que normalmente fica em C:\Program Files\MongoDB\Server\4.4\bin
    - No prompt de comando do Windows executar e deixar o cmd aperto para iniciar o servidor do Mongo:
-   ```
-   mongod.exe
-   ```
+   ```mongod.exe```
    - Em outro prompt executar o mongo e criar o banco de dados SoftMakers-Contatos:
-   ```
-   mongo.exe
-   ```
-   ```
-   use SoftMakers-Contatos
-   ```
+  ``` mongo.exe```
+   ```use SoftMakers-Contatos```
    - Criar a collection do banco:
-   ```
-   db.createCollection("customers");
-   ```
+   ```db.createCollection("customers");```
   - Agora com a conexão estabelecida com o banco de dados digite ```^C``` e em seguida ```npm start``` no terminal da aplicação para reconectar;
   - Para acessar a página da aplicação digite ```http://localhost:3000/``` em seu navegador;
  
