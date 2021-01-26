@@ -1,4 +1,4 @@
-# Gerenciador-de-Contatos
+# SoftMakers Contatos
 
 ## Projeto
 
@@ -22,22 +22,18 @@ O SoftMakers Contatos é uma aplicação web de cadastro e gerenciamento de cont
   
 ## Instruções necessárias para rodar a aplicação
 
-Clonar o repositório.
-  
+Clonar o repositório:
+```
+git clone https://github.com/MylenaAmorim/Gerenciador-de-Contatos.git SoftMakers-Contatos
+```
 ### Instalação, Tecnologias e Depedências
- - Baixar e instalar o Node.js (https://nodejs.org/en/download/current/)
- - Rodar os comandos no terminal dentro da pasta do projeto para instalar o express e o mongodb:
- ```
- npm install express
- ```
- ```
- npm install mongodb
- ```
- - No terminal de linha de comando e, dentro da pasta do projeto, digite:
+ - Baixar e instalar o Node.js (https://nodejs.org/en/download/current/);
+ - Entrar na pasta SoftMakers-Contatos;
+ - No terminal de linha de comando e, dentro da pasta do projeto, digitar:
  ```
  npm start
  ```
- - Baixar o MongoDB Community Server (https://www.mongodb.com/try/download/community)
+ - Baixar o MongoDB Community Server (https://www.mongodb.com/try/download/community);
  - Criar pasta data dentro da pasta onde foi salvo o repositório:
  ```
  mkdir data
@@ -59,13 +55,8 @@ Clonar o repositório.
    ```
    db.createCollection("customers");
    ```
-  - Agora com a conexão estabelecida com o banco de dados digite ```^C``` no terminal da aplicação para interromper:
-  - E digite ```npm start``` novamente para que não ocorra problemas de conexão
-  - Para acessar a página da aplicação digite ```http://localhost:3000/``` em seu navegador
+  - Agora com a conexão estabelecida com o banco de dados digite ```^C``` e em seguida ```npm start``` no terminal da aplicação para reconectar;
+  - Para acessar a página da aplicação digite ```http://localhost:3000/``` em seu navegador;
  
 ## Estratégias para melhorar a aplicação:
   Seria interessante utilizar o armazenameno em nuvem ao invés do local, assim a aplicação se tornaria mais eficaz, já que não haveria o gasto da mémoria local, além de poder ser aplicada em várias máquinas mais facilmente. Ademais, seria muito variável adicionar um mecanismo de busca na aplicação, para facilidar a busca dos contatos.
-  
-## Documentação e testes
-
-
