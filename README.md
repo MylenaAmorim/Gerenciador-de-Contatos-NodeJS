@@ -17,24 +17,55 @@ O SoftMakers Contatos é uma aplicação web de cadastro e gerenciamento de cont
    - Endereço do contato.
    
 ### Desenvolvimento front-end:
-  Construção da interface desenvolvida através do recurso de partial views do EJS (view-engine qusada com o ExpressJS) e  
-  junto com o framework front-end Bootstrap, muito utilizado mundialmente para estruturar aplicações web responsivas.
+  Construção da interface desenvolvida através do recurso de partial views do EJS (view-engine qusada com o ExpressJS)
+  e junto com o framework front-end Bootstrap, muito utilizado mundialmente para estruturar aplicações web responsivas.
   
-## instruções necessárias para rodar a aplicação
+## Instruções necessárias para rodar a aplicação
 
-### Requisitos:
-  - Node.js
-  - 
+Clonar o repositório.
   
 ### Instalação, Tecnologias e Depedências
  - Baixar e instalar o Node.js (https://nodejs.org/en/download/current/)
+ - Rodar os comandos no terminal dentro da pasta do projeto para instalar o express e o mongodb:
+ ```
+ npm install express
+ ```
+ ```
+ npm install mongodb
+ ```
+ - No terminal de linha de comando e, dentro da pasta do projeto, digite:
+ ```
+ npm start
+ ```
+ - Baixar o MongoDB Community Server (https://www.mongodb.com/try/download/community)
+ - Criar pasta data dentro da pasta onde foi salvo o repositório:
+ ```
+ mkdir data
+ ```
+ - Executar o Mongo:
+   - Entrar na pasta bin do MongoDB  que normalmente fica em C:\Program Files\MongoDB\Server\4.4\bin
+   - No prompt de comando do Windows executar e deixar o cmd aperto para iniciar o servidor do Mongo:
+   ```
+   mongod.exe
+   ```
+   - Em outro prompt executar o mongo e criar o banco de dados SoftMakers-Contatos:
+   ```
+   mongo.exe
+   ```
+   ```
+   use SoftMakers-Contatos
+   ```
+   - Criar a collection do banco:
+   ```
+   db.createCollection("customers");
+   ```
+  - Agora com a conexão estabelecida com o banco de dados digite ```^C``` no terminal da aplicação para interromper:
+  - E digite ```npm start``` novamente para que não ocorra problemas de conexão
+  - Para acessar a página da aplicação digite ```http://localhost:3000/``` em seu navegador
  
- 
-  
 ## Estratégias para melhorar a aplicação:
-  Seria interessante utilizar o armazenameno em nuvem invés d local, assim a aplicação se tornaria mais eficaz, já que não haveria o gasto da mémoria local, além de poder ser 
-  aplicada em varias máquinas mais facilmente.
-  Ademais, seria muito viavel adicionar um mecanismo de busca na aplicação, para facilidar a busca dos contatos.
+  Seria interessante utilizar o armazenameno em nuvem ao invés do local, assim a aplicação se tornaria mais eficaz, já que não haveria o gasto da mémoria local, além de poder ser aplicada em várias máquinas mais facilmente. Ademais, seria muito variável adicionar um mecanismo de busca na aplicação, para facilidar a busca dos contatos.
   
-  
-  
+## Documentação e testes
+
+
