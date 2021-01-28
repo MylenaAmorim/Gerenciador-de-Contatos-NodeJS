@@ -45,6 +45,15 @@ git clone https://github.com/MylenaAmorim/Gerenciador-de-Contatos.git
    ```db.createCollection("customers");```
   - Agora com a conexão estabelecida com o banco de dados digite ```^C``` e em seguida ```npm start``` no terminal da aplicação para reconectar;
   - Para acessar a página da aplicação digite ```http://localhost:3000/``` em seu navegador;
- 
-## Estratégias para melhorar a aplicação:
+  
+ ## Aplicação:
+
+![style](https://github.com/MylenaAmorim/photos/blob/main/imagens/Captura%20de%20Tela%20(71).png?raw=true)
+![style](https://github.com/MylenaAmorim/photos/blob/main/imagens/Captura%20de%20Tela%20(72).png?raw=true)
+![style](https://github.com/MylenaAmorim/photos/blob/main/imagens/Captura%20de%20Tela%20(74).png?raw=true)
+![style](https://github.com/MylenaAmorim/photos/blob/main/imagens/Captura%20de%20Tela%20(73).png?raw=true)
+
+## Estratégias para a melhoria da aplicação:
   Seria interessante utilizar o armazenameno em nuvem ao invés do local, assim a aplicação se tornaria mais eficaz, já que não haveria o gasto da mémoria local, além de poder ser aplicada em várias máquinas mais facilmente. Ademais, seria muito variável adicionar um mecanismo de busca na aplicação, para facilidar a busca dos contatos.
+
+
