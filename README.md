@@ -24,7 +24,7 @@ O SoftMakers Contatos é uma aplicação web de cadastro e gerenciamento de cont
 
 Clonar o repositório:
 ```
-git clone https://github.com/MylenaAmorim/Gerenciador-de-Contatos.git SoftMakers-Contatos
+git clone https://github.com/MylenaAmorim/Gerenciador-de-Contatos.git
 ```
 ### Instalação, Tecnologias e Depedências
  - Baixar e instalar o Node.js (https://nodejs.org/en/download/current/);
